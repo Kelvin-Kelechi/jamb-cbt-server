@@ -1,0 +1,15 @@
+export type AuthMode = "signIn" | "signUp";
+
+export interface AuthPageProps {
+  onLogin: () => void;
+}
+
+export interface AuthBannerProps {
+  isSignIn: boolean;
+}
+
+export interface AuthFormProps {
+  isSignIn: boolean;
+  setIsSignIn: (value: boolean) => void;
+  onLogin: () => void;
+}
